@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "ArchivoNarrow";
+    src: url(../fonts/Archivo-Narrow/ArchivoNarrow-Regular.ttf);
+
+
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    z-index: 0;
+
+}
+
+body {
+    background-color: 1c1c1c;
+    padding: 0px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: "ArchivoNarrow";
+    /*This sets the dont across the whole page*/
+    letter-spacing: 2px;
+
+
+}
+
+
+
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: #00A7C1;
+    border: 0px;
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 10px 18px black;
+    z-index: 1;
+
+}
+
+#logoHolder {
+    width: 150px;
+    height: 50px;
+    background-color: dodgerblue;
+    position: absolute;
+    font-size: 30px;
+    background-image: url(../images/Logo/DOOHCOM.png); /*Change path to a different logo*/
+
+
+}
+
+.clear {
+    clear: both
+}
+
+/* remove the list style */
+
+#nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+/* make the LI display inline */
+
+/* it's position relative so that position absolute */
+
+/* can be used in submenu */
+
+#nav li {
+    float: left;
+    display: block;
+    width: 100px;
+    background: #003C4C;
+    /* boxes colour #003C4C dooh dark blue */
+    position: relative;
+    z-index: 500;
+    margin: 0 1px;
+
+
+
+
+}
+
+/* this is the parent menu */
+
+#nav li a {
+    display: block;
+    padding: 8px 5px 0 5px;
+    font-weight: 700;
+    height: 42px;
+    text-decoration: none;
+    color: aqua;
+    text-align: center;
+    color: white;
+
+}
+
+#nav li a:hover {
+    background: #00A7C1;
+    color: black;   
+    /* on hover it changes the size of the font */
+}
+
+/* you can make a different style for default selected value */
+
+#nav a.selected {
+    color: yellow;
+}
+
+/* submenu, it's hidden by default */
+
+#nav ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    list-style: none;
+
+
+}
+
+#nav ul li {
+    width: 150px;
+    /* this line is used to set the sub children box width */
+    float: left;
+    border-top: 1px solid #fff;
+
+
+}
+
+/* display block will make the link fill the whole area of LI */
+
+#nav ul a {
+    display: block;
+    height: 15px;
+    width: 100%;
+    padding: 10px 0px;
+    /* handles the hover background color width */
+    color: white;
+
+}
+
+#nav ul a:hover {
+    color: black;
+    /*  Sub menu hover color */
+}
+
+#nav {
+    padding-left: 155px;
+
+}
+
+
+#menu {
+    z-index: 1;
+
+}
+
+.MenuHead {
+    line-height: 35px;
+}

@@ -1,0 +1,57 @@
+<html>
+    <head>
+    <title>DOOH GMAP</title>
+    <script src="libraries/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="logoHolder"></div>
+
+        <div id="menu">
+            <ul id="nav">
+                <li><a href="#" class="MenuHead">FILE</a>
+                    <ul>
+                        <li><a href="#">OPEN</a></li>
+                        <li><a href="#">SAVE</a></li>
+                        <li><a href="#">CLOSE</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </li>
+                <li><a href="#" class="MenuHead">SCREENS</a>
+                    <ul>
+                        <li><a href="#">JCD</a></li>
+                        <li><a href="#">CLEAR CHANNEL</a></li>
+                        <li><a href="#">OCEAN</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </li>
+                <li><a href="#" class="MenuHead">EXTRA 1</a>
+                    <ul>
+                        <li><a href="#">ITEM 04</a></li>
+                        <li><a href="#">ITEM 05</a></li>
+                        <li><a href="#">ITEM 06</a></li>
+                        <li><a href="#">ITEM 07</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </li>
+                <li><a href="#" class="MenuHead">HELP</a></li>
+            </ul>
+
+            <div class="clear"></div>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="map"></div>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvVc2ZTmXIGTAoJ_UYpwJr0BVwRymg6eM&callback=initMap" type="text/javascript"></script> 
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script> <!-- needed to use the markerer cluster lib -->
+    <script src="script/main.js"></script>
+    <script src="script/menu.js"></script>
+</body>    
+</html>
